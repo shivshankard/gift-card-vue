@@ -1,0 +1,80 @@
+{
+  "login": [
+    {
+      "firstName": "Shiv",
+      "lastName": "Kumar",
+      "username": "admin",
+      "password": "admin",
+      "usertype": "admin",
+      "email": "abc@gmail.com",
+      "registerdate": "08/21/2020 07:15",
+      "id": 1
+    }
+  ],
+  "order": [
+    {
+      "userid": 1,
+      "firstName": "Shiv",
+      "lastName": "Kumar",
+      "orderdate": "08/23/2020 10:12 pm",
+      "gcvalue": 500,
+      "status": "Processing",
+      "phone": "6576473563",
+      "address": "g hghfjh gdsg g",
+      "lastupdateddate": "08/23/2020 10:38 pm",
+      "id": 1
+    }
+  ],
+  "orderstatus": [
+    {
+      "id": 1,
+      "status": "New Order"
+    },
+    {
+      "id": 2,
+      "status": "Processing"
+    },
+    {
+      "id": 3,
+      "status": "Ready for shipment"
+    },
+    {
+      "id": 4,
+      "status": "Shipped"
+    },
+    {
+      "id": 5,
+      "status": "Out for delivery"
+    },
+    {
+      "id": 6,
+      "status": "Delivered"
+    }
+  ],
+  "gcardvalue": [
+    {
+      "id": 1,
+      "cardvalue": "100"
+    },
+    {
+      "id": 2,
+      "cardvalue": "250"
+    },
+    {
+      "id": 3,
+      "cardvalue": "500"
+    },
+    {
+      "id": 4,
+      "cardvalue": "1000"
+    },
+    {
+      "id": 5,
+      "cardvalue": "2000"
+    },
+    {
+      "id": 6,
+      "cardvalue": "5000"
+    }
+  ]
+}

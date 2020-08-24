@@ -1,0 +1,268 @@
+body {
+    min-width: 50vh;
+  }
+
+  main {
+    display: flex;
+  }
+
+  article {
+    flex: 4;
+    justify-content:center;
+    text-align: center;
+    }
+
+  nav {
+    order: -1
+  }
+
+  nav,
+  aside {
+    flex: 1;
+    background: whitesmoke;
+    padding: 10px;
+  }
+
+  header,
+  footer {
+    justify-content: center;
+    justify-items: center;
+    background:lightskyblue;
+    height: 7vh;
+    padding: 0px;
+    font-size:20px ;
+    margin:0px;
+  }
+  article {
+    background-color: whitesmoke;
+    padding: 10px;
+  }
+
+  .loginheader{
+    background:lightskyblue; 
+    display:flex; 
+    height:50px;    
+  }
+
+/* Form settings */
+.form-container {
+    padding: 0;
+    border-radius: 5px;
+}
+
+.form-main {
+    justify-content: center;
+    width:50%;
+    background-color: whitesmoke;
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid #0095ff;
+    margin-left: 12em;
+  }
+  .form-row {
+    justify-content: center;
+    padding: .25em;
+    text-align: left;
+    align-content: center;
+  }
+
+  .form-row > label{
+    padding: .5em 1em .25em 0;
+    flex: 1;
+    text-align: start;
+  }
+
+  .form-row > span {
+    padding: 0em 1em .5em 0em;
+    flex: 2;
+    text-align: start;
+  }
+
+  .form-row > input, 
+  .form-row > select{
+    flex: 2;
+    text-align: start;
+    height: auto;
+    border:1px solid cyan;
+  }
+  .form-row > input,
+  .form-row > button {
+    padding: .25em;
+  }
+  .form-row > button {
+   background:#0095ff;
+   color: white;
+   border: 0;
+   padding: 10px;
+   margin: 15px;
+   border-radius: 5px;
+  }
+  .buttongreen {
+    background:green;
+    color: white;
+    border: 0;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+   }
+   /* form setting till here */
+
+/* table setting  */
+table {
+  width:100%;
+}
+
+table, th, td {
+  border: 1px solid blue;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color:lightcyan;
+}
+tr:nth-child(odd) {
+ background-color:lightskyblue;
+}
+th {
+  background-color:#0095ff;
+  color: white;
+  font-weight: normal;
+}
+/* table setting till here */
+
+/* Menu items */
+navbar
+{
+  background:lightskyblue ;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+navbar ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+navbar ul li {
+  cursor: pointer;
+  flex:auto;
+  text-align: center;
+  padding: 10px; /*10px 0px 5px; */
+}
+
+.ul{
+  margin-bottom: 0px !important;
+  /* padding-bottom: 5px; */
+}
+li:hover {
+  background-color: indianred;
+  cursor: pointer;
+}
+
+a.router-link-active {
+  background-color: indianred;
+  color:cyan;
+}
+
+li{
+  margin-top: 0px !important;
+}
+navbar ul.logout{
+  color:transparent;
+  padding-right: 5px;
+}
+/* Menu items till here*/
+
+@media all and (min-width:828px){
+  .blogs{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  article{
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis:80%;
+      transition: flex-basis 0.5s ease-in;
+    }
+  article.stack{
+      flex: 0 1 100%;
+  }
+
+  .form-container{
+    transition: flex-basis 0.5s ease-in;
+    width:75%;
+    padding-left: 25%;
+  }
+
+  .form-main {
+    width:100%;
+    background-color: whitesmoke;
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid#0095ff;
+    justify-content: center;
+    margin-left: .1em;
+  }    
+}
+
+@media all and (min-width:601px) and (max-width:827px){
+
+  article{
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis:50%;
+      transition: flex-basis 0.5s ease-in;  
+  }
+  article.stack{
+      flex: 0 1 100%;
+  }
+  .form-main {
+    width:100%;
+    background-color: whitesmoke;
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid#0095ff;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: .1em;
+  }    
+}
+
+@media all and (max-width: 600px) {
+  .nav, .aside{
+      width: 100%;
+  }
+  navbar, ul {
+    flex-direction: column;
+    text-align: center;
+  }    
+
+  navbar ul.logout{
+    text-align: center !important;
+    justify-content: center;
+  }
+
+  form {
+    flex-direction: column;    
+  }
+
+  .form-main {
+    width:100%;
+    background-color: whitesmoke;
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid#0095ff;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: .25em;
+  }    
+}
